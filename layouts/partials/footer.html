@@ -5,14 +5,115 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
+      <!--<div class="col-12 text-center">
+        <h2 class="section-title">Contact Us</h2>
+      </div>-->
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWRbW1c_-jfdW5mSlGaEQWijDoTsyCvH6cG3pMauQrP5MkZA/viewform?embedded=true" width="640" height="1086" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            
+         <section>
+          <div class="wrapper">
+            <!-- START CODING YOUR FORM -->
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+            onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSetpmlU2wv0D16S1AaGbFz0lTIoXacR9jAGiOrqPS4YfoKhGA/formResponse">
+              
+             <div class="row">
+                <div class="col-25">
+                  <label for="country">Tour name <span style = "color:red">*</span></label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="entry.1495796190" required>
+                    <option selected disabled>Choose</option>
+                              <option value="Half Day Mekong Delta by Speedboat">Half Day Mekong Delta by Speedboat</option>
+                              <option value="Half Day Cu Chi Tunnels Speedboat">Half Day Cu Chi Tunnels Speedboat</option>
+                              <option value="Full Day Mekong Delta by Speedboat">Full Day Mekong Delta by Speedboat</option>
+                              <option value="Full Day Mekong Delta & Cu Chi Tunnels by Speedboat">Full Day Mekong Delta & Cu Chi Tunnels by Speedboat</option>
+                              <option value="Saigon River Sightseeing">Saigon River Sightseeing</option>
+                              <option value="Saigon River Sunset">Saigon River Sunset</option>
+                              <option value="Others">Others</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Name <span style = "color:red">*</span></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="entry.589003655" placeholder="Your first last name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Email <span style = "color:red">*</span></label>
+                </div>
+                <div class="col-75">
+                  <input type="email" name="entry.2138621481" placeholder="Your active email" required>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Reconfirm email <span style = "color:red">*</span></label>
+                </div>
+                <div class="col-75">
+                  <input type="email" name="entry.713446969" placeholder="Reconfirm your email" required>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Mobile</label>
+                </div>
+                <div class="col-75">
+                  <input type="tel" name="entry.254209689" placeholder="With country code" required>
+                </div>
+              </div>
+              
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="Message">Message <span style = "color:red">*</span></label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="entry.1976847407" placeholder="Write something.." style="height:300px"></textarea>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="check" >Question 2+1 =? <span style = "color:red">*</span></label>
+                </div>
+                <div class="col-75">
+                  <input type="number" name="entry.2040519846" min="3" max="3" required>
+                </div>
+              </div> <br>
+              
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+
+            </form>
+          </div>
+          </section>
+          
+
         </div>
       </div>
+<!--
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWRbW1c_-jfdW5mSlGaEQWijDoTsyCvH6cG3pMauQrP5MkZA/viewform?embedded=true" width="640" height="1086" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+-->
+<!--================================================
+insert contact form
+================================================--> 
+
+
+
+
+
 
     </div>
   </div>
@@ -35,12 +136,12 @@
   {{ end }}
 
   {{ if not .Params.isContact }}
-  <footer class="bg-dark footer-section-custom" style="padding-top: 20px">
+  <footer class="bg-dark footer-section-custom" style="padding-top: 50px">
     {{end}}
 <!-- if show contact padding -->
 
   <!-- social icon -->
-  <ul class="list-group list-group-horizontal" style ="padding-bottom: 15px; flex-direction: row; justify-content: center; align-items: center">
+  <ul class="list-group list-group-horizontal" style ="padding-bottom: 25px; flex-direction: row; justify-content: center; align-items: center">
       {{ range .Site.Data.homepage.banner.socialLinks }}
       <li style="padding:10px;" ><a class="text-white" href="{{.URL}}"><i class="{{.icon}}"></i></a></li>
       {{ end }}
@@ -68,7 +169,7 @@
 
 
   <div class="border-top text-center border-dark py-5 trade-mark-1">
-    <p class="mb-0 text-light">Powered by <a href="https://themefisher.com/best-hugo-themes">Who theme</a></p>
+    <p class="mb-0 text-light">Copyright @ 2019</Code> <a href="https://tripadvisor.com">The Company Name</a></p>
   </div>
 </footer>
 <!-- /footer -->
