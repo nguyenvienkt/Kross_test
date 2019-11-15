@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://kross-test.netlify.com/"
 languageCode = "en-us"
 title = "Kross | Test theme"
 
