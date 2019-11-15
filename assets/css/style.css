@@ -211,6 +211,7 @@ a.text-dark:hover {
 
 a:hover {
   color: #41228e
+  /*color:#f58c02*/
 }
 
 .slick-slide {
@@ -421,39 +422,47 @@ textarea.form-control {
 
 .navigation {
   padding: 10px 10px;
-  transition: .3s ease
-}
+  transition: .3s ease;
+  }
 
 .navigation.nav-bg {
-  background-color: #41228e;
-  padding: 0px 50px
+  /*background-color: #41228e;*/
+  padding: 0px 15px;
+  /*background: #ece9e9;*/
+  background:rgba(0,0,0,0.7); /*transparent nav background*/
 }
 
 @media(max-width:991px) {
   .navigation.nav-bg {
-    padding: 15px 20px
+    /*padding: 15px 20px*/
   }
 }
 
 @media(max-width:991px) {
   .navigation {
-    padding: 20px;
-    background: #41228e
+    padding: 0px;
+    background: #41228e;
+    /*background: #ece9e9;*/
   }
 }
 
 .navbar .nav-item .nav-link {
   /*font-family: bwnistaint-xbd;*/
   text-transform: uppercase;
-  padding: 15px
+  padding: 10px
 }
 
 .navbar .nav-item.active {
-  font-weight: 700
+  /*font-weight: 700*/
+    
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f58c02
 }
 
 .hero-area {
@@ -984,3 +993,5 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+
+/*===================== hết phần này ==================*/
